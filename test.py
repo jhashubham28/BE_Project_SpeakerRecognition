@@ -12,10 +12,12 @@ nSpeaker = 8
 nfiltbank = 12
 orderLPC = 15
 (codebooks_mfcc, codebooks_lpc) = training(nfiltbank, orderLPC)
-directory = os.getcwd() + '/test';
+directory = os.getcwd() + '/test/';
+directory1 = os.getcwd() + '/Attendance/';
 fname = str()
 nCorrect_MFCC = 0
 nCorrect_LPC = 0
+text=0;
 
 
 def minDistance(features, codebooks):
@@ -30,10 +32,11 @@ def minDistance(features, codebooks):
             
     return speaker
     
-
+print('Speakers Features are being tested.Please Wait..')
+print('Present Roll Numbers\n')
 for i in range(nSpeaker):
     fname = '/s' + str(i+1) + '.wav'
-    print('Now speaker ', str(i+1), 'features are being tested')
+    #print('Now speaker ', str(i+1), 'features are being tested')
     (fs,s) = read(directory + fname)
     mel_coefs = mfcc(s,fs,nfiltbank)
     lpc_coefs = lpc(s, fs, orderLPC)
@@ -45,10 +48,12 @@ for i in range(nSpeaker):
    
     if i == sp_mfcc:
         nCorrect_MFCC += 1
-        print('Roll No ',(i+1),' is present as per MFCC matching');
+        print('Roll Number',(i+1),'\n');
+        
+            
     if i == sp_lpc:
         nCorrect_LPC += 1
-        print('Roll No ',(i+1),' is present as per LPC matching');
+        print('Roll Number',(i+1),'\n');
     
 
 percentageCorrect_MFCC = (nCorrect_MFCC/nSpeaker)*100
