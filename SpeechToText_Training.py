@@ -10,7 +10,7 @@ directory = os.getcwd() + '/train/';
 # obtain audio from the microphone
 r = sr.Recognizer()
 with sr.Microphone() as source:
-    print("Testing Data")
+    print("Training Data")
     print("Please Say something!")
     audio = r.listen(source)
     
