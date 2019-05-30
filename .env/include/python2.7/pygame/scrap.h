@@ -1,0 +1,1 @@
+/usr/include/python2.7/pygame/scrap.h

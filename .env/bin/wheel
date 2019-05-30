@@ -1,4 +1,4 @@
-#!/home/pi/Downloads/BE_Project-SpeakerRecognition-master/.env/bin/python3
+#!/home/pi/Downloads/BE_Project-SpeakerRecognition-master/.env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

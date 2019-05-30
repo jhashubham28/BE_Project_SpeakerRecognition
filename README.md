@@ -9,6 +9,5 @@ Create virtualenv with:
 
 	virtualenv -p python3 .env
 	. .env/bin/activate
-	pip install -r requirements.txt 
 
 A report has been included for better understanding.

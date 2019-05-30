@@ -40,13 +40,15 @@ for i in range(nSpeaker):
     sp_mfcc = minDistance(mel_coefs, codebooks_mfcc)
     sp_lpc = minDistance(lpc_coefs, codebooks_lpc)
     
-    print('Speaker ', (i+1), ' in test matches with speaker ', (sp_mfcc+1), ' in train for training with MFCC')
-    print('Speaker ', (i+1), ' in test matches with speaker ', (sp_lpc+1), ' in train for training with LPC')
+   # print('Speaker ', (i+1), ' in test matches with speaker ', (sp_mfcc+1), ' in train for training with MFCC')
+   # print('Speaker ', (i+1), ' in test matches with speaker ', (sp_lpc+1), ' in train for training with LPC')
    
     if i == sp_mfcc:
         nCorrect_MFCC += 1
+        print('Roll No ',(i+1),' is present as per MFCC matching');
     if i == sp_lpc:
         nCorrect_LPC += 1
+        print('Roll No ',(i+1),' is present as per LPC matching');
     
 
 percentageCorrect_MFCC = (nCorrect_MFCC/nSpeaker)*100
