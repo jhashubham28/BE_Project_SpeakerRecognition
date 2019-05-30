@@ -47,8 +47,8 @@ for i in range(nSpeaker):
    # print('Speaker ', (i+1), ' in test matches with speaker ', (sp_lpc+1), ' in train for training with LPC')
    
     if i == sp_mfcc:
-        nCorrect_MFCC += 1
-        print('Roll Number',(i+1),'\n');
+         nCorrect_MFCC += 1
+         print('Roll Number',(i+1),'\n');
         
             
     if i == sp_lpc:

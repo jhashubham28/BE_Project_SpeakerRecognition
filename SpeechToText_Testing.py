@@ -18,10 +18,10 @@ with sr.Microphone() as source:
     print("You said : {}".format(text))
     
     
-with open( directory+"s1.txt", "wb") as f:
-    f.write(text)
+#with open( directory+"s1.txt", "wb") as f:
+ #   f.write(text)
 
 # write audio to a WAV file
-with open(directory+"s1.wav", "wb") as f:
+with open(directory+"s8.wav", "wb") as f:
     f.write(audio.get_wav_data())
 

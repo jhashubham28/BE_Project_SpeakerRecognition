@@ -15,7 +15,7 @@ def training(nfiltbank, orderLPC):
     codebooks_lpc = np.empty((nSpeaker, orderLPC, nCentroid))
     directory = os.getcwd() + '/train';
     fname = str()
-        print('Speakers features are being trained.Please wait....')
+    print('Speakers features are being trained.Please wait....')
     for i in range(nSpeaker):
         fname = '/s' + str(i+1) + '.wav'
         #print('Now speaker ', str(i+1), 'features are being trained' )

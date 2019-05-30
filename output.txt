@@ -1,0 +1,27 @@
+Speakers features are being trained.Please wait....
+Training complete
+Speakers Features are being tested.Please Wait..
+Present Roll Numbers
+
+Roll Number 1 
+
+Roll Number 1 
+
+Roll Number 2 
+
+Roll Number 3 
+
+Roll Number 3 
+
+Roll Number 4 
+
+Roll Number 5 
+
+Roll Number 5 
+
+Roll Number 6 
+
+Roll Number 8 
+
+Accuracy of result for training with MFCC is  62.5 %
+Accuracy of result for training with LPC is  62.5 %
